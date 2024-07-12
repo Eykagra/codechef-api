@@ -9,7 +9,7 @@ def get_codechef_user_details(username):
     url = f"https://www.codechef.com/users/{username}"
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raises an HTTPError for bad responses
+        response.raise_for_status()  
         
         soup = BeautifulSoup(response.text, 'html.parser')
         
