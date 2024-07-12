@@ -39,7 +39,7 @@ def get_codechef_user_details(username):
         print(f"Error fetching data: {e}")
         return None
 
-@app.route('/user/<username>')
+@app.route('/<username>')
 def user_details(username):
     details = get_codechef_user_details(username)
     if details:
